@@ -1,0 +1,11 @@
+{
+  "name": "devflix-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Netflix-inspired portfolio (DevFlix) — static site with a minimal Node server",
+  "scripts": {
+    "start": "node serve-devflix.js"
+  }
+}
+
+

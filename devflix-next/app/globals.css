@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 12px;
+}
+
+.container {
+  @apply w-full max-w-6xl mx-auto px-4;
+}
+
+.chip { @apply inline-flex items-center gap-2 rounded-full bg-zinc-800/60 px-3 py-1 text-sm text-zinc-200; }
+.btn { @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 font-medium; }
+.btn-primary { @apply bg-brand text-white hover:bg-indigo-500; }
+.btn-ghost { @apply border border-zinc-700 hover:bg-zinc-800; }
+
+/* Section reveal */
+.reveal { opacity: 0; transform: translateY(16px); transition: all .5s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+
