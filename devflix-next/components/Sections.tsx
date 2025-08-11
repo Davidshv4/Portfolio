@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useMemo, useState } from 'react';
+import React from 'react';
+const { useEffect, useMemo, useState } = React;
 import { PROJECTS, type Project } from '@/lib/projects';
 
 function groupProjects(projects: Project[], query: string) {
@@ -158,7 +159,7 @@ function MoreToggle({ description, projectId }: { description: string; projectId
 }
 
 export default function Sections() {
-  const [projects, setProjects] = useState<Project[]>(PROJECTS);
+  const [projects, setProjects] = useState(PROJECTS);
   const [query, setQuery] = useState('');
 
   useEffect(() => {
